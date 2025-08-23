@@ -494,6 +494,14 @@ header{
      background-color:  rgb(45, 46, 58);
 
 }
+.ownedby{
+    color: white;
+    /* align-items: center;
+    justify-content: center;
+     */
+     text-align: center;
+     
+}
 
 
 
