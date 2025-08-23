@@ -1,0 +1,969 @@
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, Helvetica, sans-serif;
+    color: white;
+    font-family: Lato, sans-serif;
+    
+    
+}
+body{
+    background-color: rgb(23, 31, 36);
+    color: white;
+    width: 100vw;
+    /* position: fixed; */
+    /* scroll-behavior: smooth; */
+}
+
+
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.25rem 10%;
+    width: 100vw;
+    background-color: rgb(45, 46, 58);
+    /* background: transparent; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+    
+    
+}
+.logo{
+    position: relative;
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+
+}
+.logo::first-letter{
+    color: rgb(249, 4, 135);
+    font-weight: 600;
+}
+.navbar a {
+    display: inline-block;
+    font-size: 1.25rem;
+    margin-left: 2.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    
+
+}
+.navbar a:hover {
+    color: #0ef;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    
+    /* text-shadow: 0 0 3px #0ef; */
+}
+
+
+.home{
+    color: black;
+    margin-top: 10vh;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+    
+}
+/* This is for to take the image and intro in one line */
+#container1{
+    display: flex;
+    
+    align-items: center;
+
+   
+}
+.name{
+    color: rgb(249, 4, 135);
+}
+.profesion{
+    color: #0ef;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    
+
+}
+.profesion:hover{
+    
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    
+}
+.myname{
+    font-size: 1.56rem;
+    font-weight: 600;
+}
+.myself{
+    margin-top: 1.2rem;
+}
+.myimg{
+    width: 25rem;
+    height: 25rem;
+    margin-left: 15rem;
+    
+    border: 0.313rem solid #0ef;
+    border-radius: 50%;
+    box-shadow: 0 0 100px #0ef;
+    transition: 2s;
+
+    
+}
+.myimg:hover{
+    box-shadow:  0 0 5px #0ef,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 75px cyan, 0 0 100px cyan;
+}
+
+
+.home_contact a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.3rem;
+    margin-top: 0.9rem;
+    /* padding-right: 60px; */
+    background: transparent;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 2px solid aqua;
+    color: #0ef;
+    font-size: 1.25rem ;
+
+}
+.home_contact a:hover{
+    background-color: aqua;
+    color: black;
+    box-shadow: 0 0 15px #0ef;
+    
+}
+.home_contact a i:hover{
+    background-color: aqua;
+    color: black;
+    box-shadow: 0 0 15px #0ef;}
+/* 
+.about1  {
+    
+    margin-top: 1.2rem;
+    padding-top: 5px ;
+    height: 30px;
+    width: 150px;
+    border: 2px solid #0ef;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #0ef;
+    
+} */
+.btn_box{
+    margin-top: 20px;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    background-color: #0ef;
+    letter-spacing: 1px;
+    font-weight: 550;
+    border: 2px solid #0ef;
+    border-radius: 20px;
+
+    
+}
+.btn_box:hover{
+    cursor: pointer;
+    /* box-shadow: 0 0 5px #0ef,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan; */
+    box-shadow: 0 0 50px cyan;
+    background-color: #0ef;
+}
+.about_me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px 0 40px;
+    height: 120vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+   
+}
+.proimg{
+    width: 25rem;
+    height: 25rem;
+    margin-top: 7rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    border-radius: 50%;
+    border: 0.313rem solid cyan;
+    box-shadow: 0 0 100px cyan;
+    transition: 2s;
+}
+.proimg:hover{
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 75px cyan, 0 0 100px cyan;
+}
+.aboutmetxt{
+   align-content: flex-start;
+   margin-left: 7rem;
+}
+.abouthead{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    /* text-decoration: underline;
+    text-decoration-thickness: 3px; */
+}
+.webdev{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.me{
+    color: cyan;
+    
+}
+.education{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(235, 13, 13);
+}
+.eduyear{
+    color: rgb(235, 13, 13);
+    font-weight: 500;
+    
+}
+.edu{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+/* this code for skills */
+
+
+
+
+.skillsheading{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    /* text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #0ef;
+    text-decoration-line: 20px; */
+}
+.skills{
+    width: 100vw;
+    height: 70vh;
+    margin-top: 20px;
+    background-color: rgb(36, 44, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+.bar{
+    height: 170px;
+    width: 170px;
+    color: white;
+    background-color: rgb(45, 52, 54);
+    box-shadow: 0 0 15px rgb(121, 112, 102); 
+    border-radius: 20px;
+    box-shadow: 0 0 15px #f7f9fc; 
+   text-align: center;
+    padding-top: 20px;
+    font-size: 500;
+    cursor: pointer;
+}
+.skills .bar .info a i{
+    font-size: 80px;
+}
+.skills .bar .info p{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+
+/* this code for projects */
+.project{
+    margin-top: 30px;
+    height: 100vh;
+    width: 100vw;
+}
+.projectheading{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* text-decoration: underline;
+    text-decoration-thickness: 3px; */
+
+}
+#container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+}
+.project1{
+    width: 400px;
+    height: 330px;
+    background-color: yellow;
+    border-radius: 15px;
+    /* transition: 0.8s ease-in; */
+    /* background-image: url("webdevelopment.jpg"); */
+    background-size: cover;
+    border: 2px solid white;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(121, 112, 102); 
+    
+
+    
+    /* box-shadow: 0 0 20px black; */
+
+}
+/* .project1:hover{
+    color: rgb(245, 10, 49);
+    background-color: orangered;
+    
+} */
+
+.project2{
+    width: 400px;
+    height: 330px;
+    background-color: pink;
+    border-radius: 15px;
+    /* transition: 0.8s ease-in-out; */
+    /* background-image: url("coding2.avif"); */
+    background-size: cover;
+    border: 2px solid white;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(121, 112, 102); 
+    /* box-shadow: 0 0 15px rgb(168, 198, 198);
+*/
+}
+/* .project2:hover{
+    color: rgb(245, 10, 49);
+    background-color: orangered;
+    width: 430px;
+    height: 360px;
+     position: sticky; 
+}*/
+
+.project3{
+    width: 400px;
+    height: 330px;
+    background-color: blue;
+    border-radius: 15px;
+    /* transition: 0.8s ease-in-out; */
+    /* background-image: url("coding3.webp"); */
+    background-size: cover;
+    border: 2px solid white;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(121, 112, 102); 
+    /* box-shadow: 0 0 15px  cyan; */
+    
+}
+/* .project3:hover{
+    color: rgb(245, 10, 49);
+    background-color: orangered;
+    width: 430px;
+    height: 360px;
+   position: sticky; 
+} */
+
+/* contact */
+.contacts{
+    display: flex;
+    
+    width: 100%;
+    height: 80vh;
+    
+}
+.abtcontact{
+    text-align: left;
+    margin-left: 50px;
+    width: 50%;
+}
+.contact{
+    font-size: 35px;
+    font-weight: 600;
+    /* margin-top: 100px; */
+    margin-bottom: 30px;
+    /* text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #0ef; */
+    
+
+}
+.cnctpara{
+    margin-bottom: 20px;
+}
+.emailnum{
+    font-weight: 600;
+}
+.contactmsg{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 500px;
+    background-color:  rgb(36, 44, 48);
+    box-shadow: 0 0 15px rgb(121, 112, 102); 
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* margin-left: 50px; */
+}
+.msgnes{
+    height: 50px;
+    width: 500px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(65, 65, 65);
+     overflow-x: auto;
+    
+}
+.entermsg{
+    height: 200px;
+    width: 500px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(65, 65, 65);
+     overflow-x: auto;
+    padding: 10px;
+    resize: none;
+    
+    
+    
+    
+}
+/* mark{
+    color: rgb(6, 23, 24);
+} */
+.msgsubmit{
+    background-color: #0ef;
+    color: black;
+    font-size: 20px;
+    font-weight: 520;
+    letter-spacing: 1px;
+    height: 40px;
+    width: 500px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 2px solid #0ef;
+}
+.msgsubmit:hover{
+    cursor: pointer;
+    box-shadow: 0 0 50px cyan;
+    /* box-shadow: 0 0 5px #0ef,
+    0 0 10px cyan, 0 0 20px cyan,
+    0 0 30px cyan, 0 0 40px cyan; */
+    /* background-color: #0ef; */
+
+}
+
+.footer{
+    width: 100vw;
+    height: 200px;
+     background-color:  rgb(45, 46, 58);
+
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: arial, Helvetica, sans-serif; */
+    font-family: Lato, sans-serif;
+    color: black;
+    
+    
+}
+body{
+    background-color: whitesmoke;
+    color: black;
+    width: 100vw;
+    /* position: fixed; */
+    /* scroll-behavior: smooth; */
+}
+
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.25rem 10%;
+    width: 100vw;
+    background-color: white;
+    /* background: transparent; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+    
+    
+}
+.logo{
+    position: relative;
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+
+}
+.logo::first-letter{
+    color: rgb(249, 4, 135);
+    font-weight: 600;
+}
+.navbar a {
+    display: inline-block;
+    font-size: 1.25rem;
+    margin-left: 2.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    
+
+}
+.navbar a:hover {
+    color: rgb(249, 4, 135);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    
+    /* text-shadow: 0 0 3px #0ef; */
+}
+
+
+.home{
+    color: black;
+    margin-top: 10vh;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+    
+}
+/* This is for to take the image and intro in one line */
+#container1{
+    display: flex;
+    
+    align-items: center;
+
+   
+}
+/* .name{
+    color: rgb(249, 4, 135);
+} */
+.profesion{
+    color: rgb(4, 163, 105);
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 1s ;
+    
+   
+}
+.profesion:hover{
+    
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    
+}
+.myname{
+    font-size: 1.56rem;
+    font-weight: 600;
+    
+}
+.myself{
+    margin-top: 1.2rem;
+}
+.myimg{
+    width: 25rem;
+    height: 25rem;
+    margin-left: 15rem;
+    
+    border: 0.313rem solid rgb(249, 4, 135);
+    border-radius: 50%;
+    /* box-shadow: 0 0 100px rgb(249, 4, 135);*/
+    transition: 2s; 
+
+    
+}
+.myimg:hover{
+    box-shadow:  0 0 5px rgb(249, 4, 135),
+    0 0 25px rgb(249, 4, 135), 0 0 50px rgb(249, 4, 135),
+    0 0 75px rgb(249, 4, 135), 0 0 100px rgb(249, 4, 135);
+}
+
+
+.home_contact a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.3rem;
+    margin-top: 0.9rem;
+    /* padding-right: 60px; */
+    background: transparent;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 2px solid black;
+    /* color: rgb(249, 4, 135); */
+    font-size: 1.25rem ;
+
+}
+.home_contact a:hover{
+    background-color: rgb(249, 4, 135);
+    /* color: black; */
+    box-shadow: 0 0 15px rgb(249, 4, 135);
+    
+}
+.home_contact a i:hover{
+    background-color: rgb(249, 4, 135);
+    color: white;
+    box-shadow: 0 0 15px rgb(249, 4, 135);
+    
+}
+.btn_box{
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 15px;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    background-color: green;
+
+    
+}
+.btn_box:hover{
+    cursor: pointer;
+    
+    
+}
+.about_me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px 0 40px;
+    height: 120vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+   
+}
+.proimg{
+    width: 25rem;
+    height: 25rem;
+    margin-top: 7rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    border-radius: 50%;
+    border: 0.313rem solid cyan;
+    box-shadow: 0 0 100px cyan;
+    transition: 2s;
+}
+.proimg:hover{
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 75px cyan, 0 0 100px cyan;
+}
+.aboutmetxt{
+   align-content: flex-start;
+   margin-left: 7rem;
+}
+.abouthead{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    /* text-decoration: underline;
+    text-decoration-thickness: 3px; */
+}
+.webdev{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.me{
+    color: rgb(249, 4, 135);
+    
+}
+.education{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.eduyear{
+    color: rgb(235, 13, 13);
+    font-weight: 500;
+    
+}
+.edu{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+/* this code for skills */
+
+
+
+
+.skillsheading{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    /* text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #0ef;
+    text-decoration-line: 20px; */
+}
+.skills{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+.bar{
+    height: 170px;
+    width: 170px;
+    background-color: #f7f9fc;
+     box-shadow: 0 0 15px rgb(121, 112, 102); 
+    border-radius: 20px;
+    color: black;
+   text-align: center;
+    padding-top: 20px;
+    font-size: 500;
+    cursor: pointer;
+}
+.skills .bar .info a i{
+    font-size: 80px;
+}
+.skills .bar .info p{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+
+/* this code for projects */
+.project{
+    margin-top: 30px;
+    height: 100vh;
+    width: 100vw;
+}
+.projectheading{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* text-decoration: underline;
+    text-decoration-thickness: 3px; */
+
+}
+#container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+}
+.project1{
+    width: 400px;
+    height: 330px;
+    background-color: yellow;
+    border-radius: 15px;
+    transition: 0.8s ease-in;
+    background-image: url("webdevelopment.jpg");
+    background-size: cover;
+    border: 2px solid white;
+     box-shadow: 0 0 15px rgb(121, 112, 102); 
+    cursor: pointer;
+    
+
+    
+    /* box-shadow: 0 0 20px black; */
+
+}
+.project1:hover{
+    color: rgb(245, 10, 49);
+    background-color: orangered;
+    width: 430px;
+    height: 360px;
+    position: sticky;
+    /* transform: scale(1.1); */
+    /* transform: scaleY(1.1); */
+    
+}
+
+.project2{
+    width: 400px;
+    height: 330px;
+    background-color: pink;
+    border-radius: 15px;
+    transition: 0.8s ease-in-out;
+    background-image: url("coding2.avif");
+    background-size: cover;
+    border: 2px solid white;
+     box-shadow: 0 0 15px rgb(121, 112, 102); 
+    cursor: pointer;
+    /* box-shadow: 0 0 15px rgb(168, 198, 198);
+*/
+}
+.project2:hover{
+    color: rgb(245, 10, 49);
+    background-color: orangered;
+    width: 430px;
+    height: 360px;
+    position: sticky;
+}
+.project3{
+    width: 400px;
+    height: 330px;
+    background-color: blue;
+    border-radius: 15px;
+    transition: 0.8s ease-in-out;
+    background-image: url("coding3.webp");
+    background-size: cover;
+    border: 2px solid white;
+     box-shadow: 0 0 15px rgb(121, 112, 102); 
+    cursor: pointer;
+    /* box-shadow: 0 0 15px  cyan; */
+    
+}
+.project3:hover{
+    color: rgb(245, 10, 49);
+    background-color: orangered;
+    width: 430px;
+    height: 360px;
+    position: sticky;
+}
+
+/* contact */
+.contacts{
+    display: flex;
+    
+    width: 100%;
+    height: 80vh;
+    
+}
+.abtcontact{
+    text-align: left;
+    margin-left: 50px;
+    width: 50%;
+}
+.contact{
+    font-size: 35px;
+    font-weight: 600;
+    /* margin-top: 100px; */
+    margin-bottom: 30px;
+    /* text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #0ef; */
+    
+
+}
+.cnctpara{
+    margin-bottom: 20px;
+}
+.emailnum{
+    font-weight: 600;
+}
+.contactmsg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+    background-color:  #f7f9fc;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(121, 112, 102); 
+    gap: 10px;
+    /* margin-left: 50px; */
+}
+.msgnes{
+    height: 50px;
+    width: 500px;
+    border-radius: 8px;
+    color: black;
+    border: 2px solid #ddd;
+    background-color: aliceblue;
+    
+}
+.entermsg{
+    height: 200px;
+    width: 500px;
+    border-radius: 8px;
+    color: black;
+    border: 2px solid #ddd;
+    background-color: aliceblue;
+    padding: 10px;
+    resize: none;
+    
+    
+    
+    
+}
+.msgsubmit{
+    background-color: #0ef;
+    color: black;
+    font-size: 20px;
+    font-weight: 520;
+    letter-spacing: 1px;
+    height: 40px;
+    width: 500px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 2px solid #0ef;
+}
+.msgsubmit:hover{
+    cursor: pointer;
+    box-shadow: 0 0 50px cyan;
+    
+
+}
+
+}
+   
