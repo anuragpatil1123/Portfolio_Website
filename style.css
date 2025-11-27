@@ -7,12 +7,13 @@
     font-family: Lato, sans-serif;
 
 
+
 }
 
-body {
+html, body {
     background-color: rgb(23, 31, 36);
     color: white;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -26,13 +27,14 @@ header {
     left: 0;
     padding: 10px 10%;
     /* height: 40px; */
-    width: 100vw;
+    width: 100%;
     background-color: rgb(45, 46, 58);
     /* background: transparent; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     z-index: 100;
+    /* gap: -30px; */
 
 
 
@@ -81,6 +83,7 @@ header {
     position: relative;
     justify-content: space-between;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 70px 10% 0;
@@ -93,7 +96,7 @@ header {
     justify-content: center;
     align-items: center;
     /* flex-wrap: wrap; */
-    gap: 200px;
+    gap: 50px;
 
 
 }
@@ -149,7 +152,8 @@ header {
         0 0 25px cyan, 0 0 50px cyan,
         0 0 75px cyan, 0 0 100px cyan;
 }
-.mycontact{
+
+.mycontact {
     display: flex;
     justify-content: start;
     align-items: start;
@@ -189,7 +193,8 @@ header {
     color: black;
     box-shadow: 0 0 15px #0ef;
 }
-.btn_box  {
+
+.btn_box {
     height: 30px;
     width: 150px;
     background-color: #0ef;
@@ -197,7 +202,8 @@ header {
     text-align: center;
     padding-top: 5px;
 }
-.btn_cv{
+
+.btn_cv {
     text-decoration: none;
     color: black;
     font-size: 15;
@@ -312,7 +318,7 @@ header {
 .skills {
     /* width: 100vw; */
     height: 70vh;
-    width: 70vw;
+    width: 90vw;
     margin-top: 20px;
     background-color: rgb(36, 44, 48);
     display: flex;
@@ -328,8 +334,8 @@ header {
 }
 
 .bar {
-    height: 198px;
-    width: 198px;
+    height: 200px;
+    width: 200px;
     color: white;
     background-color: rgb(45, 52, 54);
     border-radius: 20px;
@@ -460,6 +466,7 @@ header {
 .cnctpara {
     text-align: start;
     margin-bottom: 20px;
+    margin-right: 10px;
 }
 
 .emailnum {
@@ -477,7 +484,6 @@ header {
     background-color: rgb(45, 52, 54);
     /* box-shadow: 0 0 25px rgb(121, 112, 102); */
     border-radius: 20px;
-    gap: 10px;
 
 }
 
@@ -486,8 +492,9 @@ header {
     width: 480px;
     border-radius: 8px;
     color: #f0f0f0;
-    background-color: #3a3a3a; 
+    background-color: #3a3a3a;
     overflow-x: auto;
+    margin-bottom: 10px;
 
 }
 
@@ -495,8 +502,8 @@ header {
     height: 150px;
     width: 480px;
     border-radius: 8px;
-   color: #f0f0f0;
-    background-color: #3a3a3a; 
+    color: #f0f0f0;
+    background-color: #3a3a3a;
     overflow-x: auto;
     padding: 10px;
     resize: none;
@@ -510,11 +517,14 @@ header {
     font-size: 20px;
     font-weight: 520;
     letter-spacing: 1px;
-    height: 40px;
+    height: 35px;
     width: 200px;
-    margin-top: 10px;
-    border-radius: 15px;
+    border-radius: 17px;
     border: 2px solid #0ef;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+
 
 
 }
@@ -527,9 +537,10 @@ header {
 }
 
 .footer-section {
-    width: 100vw;
+    width: 100%;
     height: 100px;
     background-color: rgb(45, 46, 58);
+    overflow-x: hidden;
 
 }
 
@@ -537,11 +548,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
+
+
 }
 
-.personalinfo p{
+.personalinfo p {
     margin-top: 20px;
 }
 
@@ -552,13 +563,23 @@ header {
 @media(max-width: 1000px) {
     * {
         margin: 0px;
+
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        width: 100%;
     }
 
     .navbar a {
         font-size: 10px;
         margin-left: 10px;
-        margin-right: 10px;
+
     }
+
 
     .logo {
         font-size: 20px;
@@ -572,17 +593,18 @@ header {
 
     .home_content {
         flex-direction: column-reverse;
-        gap: 150px;
+        gap: 30px;
     }
 
     .myimg {
-        width: 300px;
-        height: 300px;
+        width: 260px;
+        height: 260px;
+        margin-top: -50px;
     }
 
     .proimg {
-        width: 300px;
-        height: 300px;
+        width: 260px;
+        height: 260px;
         margin: 0px;
     }
 
@@ -596,7 +618,7 @@ header {
 
     .skills {
         height: 50vh;
-        width: 70vw;
+        width: 90vw;
         margin-top: 20px;
         gap: 50px;
 
@@ -660,20 +682,21 @@ header {
     }
 
     .contactmsg {
-        width: 400px;
+
         height: 450px;
-        gap: 10px;
+        width: 100% !important;
+        max-width: 320px;
     }
 
     .msgnes {
         height: 40px;
-        width: 360px;
+        width: 300px;
 
     }
 
     .entermsg {
         height: 140px;
-        width: 360px;
+        width: 300px;
         padding: 10px;
         resize: none;
 
@@ -683,9 +706,16 @@ header {
     }
 
     .msgsubmit {
+
         height: 30px;
         width: 200px;
         margin-top: 10px;
+    }
+
+    .footer-section {
+        width: 100%;
+        height: 80px;
+
     }
 
 }
