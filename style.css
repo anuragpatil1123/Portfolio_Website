@@ -661,7 +661,7 @@ header {
         margin-bottom: 50px;
         gap: 40px;
         width: 70vw;
-        height: 100vh;
+        height: 100%;
     }
 
     .contacts-section {
